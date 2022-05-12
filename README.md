@@ -15,10 +15,11 @@
 
 ## 🚀 Tecnologias
 
-* node.js (v16.15.0) / npm (v8.9.0)
-* angular (v13.3.5)
-* bootstrap 4
-* backend Node.js
+* Angular CLI: 13.3.5
+* Node: 16.15.0
+* Package Manager: npm 8.9.0
+* Bootstrap 4.1
+* Back-end em Node.js
 
 
 ## Instruções

@@ -27,10 +27,14 @@
             <td> {{ course.code | lowercase | replace: '-': ' ' }} </td>
             <td> {{ course.releaseDate | date: 'dd/MM/yyyy' }} </td>
             <td> <app-star> [rating]="course.rating" </app-star> </td>
-            <td> <a [routerLink]="['/courses/info', course.id]">
-                <span class="fa fa-edit"></span>
-                <span class="fa fa-trash mx-3"></span>
-            </a> </td>
+            <td> 
+                <a [routerLink]="['/courses/info', course.id]">
+                    <span class="fa fa-edit"></span>
+                </a>
+                <button (click)="deleteById(course.id)" class="btn btn-link">
+                    <span class="fa fa-trash mx-3"></span>
+                </button>
+            </td>
         </tr>
     </tbody>
 </table>
