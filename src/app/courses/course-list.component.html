@@ -1,14 +1,12 @@
 <div class="container">
     <h2 class="text-primary mt-5">Lista de Cursos</h2>
     
-    <div class="form-group row mt-4">
-    
+    <div class="form-group row mt-4">    
         <label class="col-sm-2 col-form-label">Buscar por:</label>
     
         <div class="col-sm-6">
             <input [(ngModel)]="filter" class="form-control">
-        </div>
-    
+        </div>    
     </div>
     
     <table class="table table-striped mt-4">
@@ -31,8 +29,12 @@
                 <td> {{ course.code | lowercase | replace: '-': ' ' }} </td>
                 <td> {{ course.releaseDate | date: 'dd/MM/yyyy' }} </td>
                 <td> <app-star> [rating]="course.rating" </app-star> </td>
-                <td> <button class="btn btn-primary">Edit</button> </td>
+                <td> <a [routerLink]="['/courses/info', course.id]">
+                    <span class="fa fa-edit px-3"></span>
+                    <span class="fa fa-trash"></span>
+                </a> </td>
             </tr>
         </tbody>
     </table>
+
 </div>
