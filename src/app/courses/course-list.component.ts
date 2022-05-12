@@ -15,23 +15,25 @@ export class CourseListComponent {
         this.courses = [
             {
                 id: 1,
-                name: "AngularJS",
-                imageUrl: "",
+                name: "Angular Forms",
+                imageUrl: "./assets/images/forms.png",
                 price: 99.99,
                 code: "XPS-8796",
                 duration: 120,
-                rating: 4.5,
-                release_date: "December, 04, 2018"
+                rating: 5,
+                releaseDate: "December, 04, 2022",
+                description: "This course will help you to learn how to use Angular Forms"
             },
             {
                 id: 2,
                 name: " Angular HTTP",
-                imageUrl: "",
+                imageUrl: "./assets/images/http.png",
                 price: 45.99,
-                code: "LKL-8796",
+                code: "LKL-1094",
                 duration: 80,
-                rating: 3.5,
-                release_date: "December, 10, 2018"
+                rating: 3,
+                releaseDate: "December, 10, 2022",
+                description: "This course will help you to learn how to use Angular HTTP"
             },
         ];
 
