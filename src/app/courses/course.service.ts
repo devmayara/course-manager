@@ -1,6 +1,8 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
-import { Course } from "./course";
+import { Course } from './course';
+import { Observable } from 'rxjs';
 
 @Injectable({
     providedIn: "root"
@@ -12,6 +14,16 @@ export class CourseService {
         return COURSES;
     }
 
+    retrieveById(id: number): Course {
+        return COURSES.find(courseInteretor: Course => courseInteretor.id === id);
+    }
+
+    save(course: Course): void {
+        if(course.id) {
+            const index = COURSES.findIndex(courseInteretor: Course => courseInteretor.id === course.id);
+            COURSES[index] = course;
+        }
+    }
 }
 
 var COURSES: Course[] = [

@@ -9,11 +9,18 @@ import { CourseService } from './course.service';
 })
 export class CourseInfoComponent implements OnInit {
 
-    courseId!: number;
+    course!: Course;
 
-    constructor(private activatedRoute: ActivatedRoute) { }
+    constructor(
+        private activatedRoute: ActivatedRoute, 
+        private courseService: CourseService
+    ) { }
 
     ngOnInit(): void { 
-        this.courseId = this.activatedRoute.snapshot.params["id"];
+        this.course = this.courseService.retrieveById(+this.activatedRoute.snapshot.paramMap.get('id'));
+    }
+
+    save(): void {
+        this.courseService.save(this.course);
     }
 }
