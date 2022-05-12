@@ -1,6 +1,15 @@
-<div class="container mt-5">
+<div class="container">
+    <h2 class="text-primary mt-5">Lista de Cursos</h2>
     
-    <h2 class="text-primary">Lista de Cursos</h2>
+    <div class="form-group row mt-4">
+    
+        <label class="col-sm-2 col-form-label">Buscar por:</label>
+    
+        <div class="col-sm-6">
+            <input [(ngModel)]="filter" class="form-control">
+        </div>
+    
+    </div>
     
     <table class="table table-striped mt-4">
         <thead>
@@ -15,7 +24,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let course of courses">
+            <tr *ngFor="let course of filteredCourses">
                 <td> <img [src]="course.imageUrl" width="40" height="40"> </td>
                 <td> {{ course.name }} </td>
                 <td> {{ course.price }} </td>
