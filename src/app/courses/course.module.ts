@@ -5,19 +5,19 @@ import { RouterModule } from "@angular/router";
 
 import { CourseListComponent } from "./course-list.component";
 import { CourseInfoComponent } from "./course-info.component";
-import { ReplacePipe } from '../pipe/replace.pipe';
-import { StarComponent } from "../star/star.component";
+import { AppPipeModule } from '../shered/pipe/app-pipe.module';
+import { StarModule } from "../shered/component/star/star.module";
 
 @NgModule({
     declarations: [
         CourseListComponent,
-        CourseInfoComponent,
-        ReplacePipe,
-        StarComponent
+        CourseInfoComponent
     ],
     imports: [
         CommonModule,
         FormsModule,
+        AppPipeModule,
+        StarModule,
         RouterModule.forChild([
             {
               path: 'courses', component: CourseListComponent
