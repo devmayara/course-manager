@@ -43,7 +43,7 @@ ng serve
 ```
 Para ver o aplicativo no navegador, acesse http://localhost:4200/. 
 
-3. Após clonar o repositório, para instalação do serve local certifique-se de ter instalado em sua máquina os pacotes npm e use o seguinte comando na raiz da pasta server:
+3. Após clonar o repositório, para instalação o servidor local certifique-se de ter instalado em sua máquina os pacotes npm e use o seguinte comando na raiz da pasta /src/assets/server:
 
 ```bash
 node serve.js
