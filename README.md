@@ -53,4 +53,6 @@ Para ver o serve no navegador, acesse http://localhost:3100/api/courses.
 
 ## Demonstração
 
-# GIF
+ <div>
+    <img height="350" src="" style="max-width:100%;"/>
+</div>
