@@ -4,13 +4,17 @@
 <p align="center">
   <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
-  <a href="#-instruções">Instruções</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#demonstração">Demonstração</a>&nbsp;&nbsp;&nbsp;  
+  <a href="#instruções">Instruções</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 
 ## 📖 Sobre
 
+Demonstração:
+
+<div>
+  <img height="350" src="https://raw.githubusercontent.com/devmayara/course-manager/main/src/assets/videos/gravacao_de_tela13-05-2022%2009_38_53.gif" style="max-width:100%;"/>
+</div>
 
 
 ## 🚀 Tecnologias
@@ -49,10 +53,3 @@ Para ver o aplicativo no navegador, acesse http://localhost:4200/.
 node serve.js
 ```
 Para ver o serve no navegador, acesse http://localhost:3100/api/courses.
-
-
-## Demonstração
-
- <div>
-    <img height="350" src="https://raw.githubusercontent.com/devmayara/course-manager/main/src/assets/videos/gravacao_de_tela13-05-2022%2009_38_53.gif" style="max-width:100%;"/>
-</div>
